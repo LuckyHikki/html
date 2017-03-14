@@ -1,0 +1,30 @@
+<html>
+    <head><title>Random Image whatever </title>
+    <style>
+body{
+padding:0px;
+margin:0px;
+background-color: #000;
+color: #000; //black 000000
+}</style>
+    </head>
+    <body>
+    <h1 style="color: white">Random Image thingy~~</h1>
+    <script type="text/javascript">
+    var images = [];
+        index = 0;
+    images[0] = "img/img0.jpg";
+    images[1] = "img/img1.jpg";
+    images[2] = "img/img2.gif";
+    images[3] = "img/img3.jpg";
+    images[4] = "img/img4.jpg";
+    images[5] = "img/img5.gif";
+    images[6] = "img/img6.jpg";
+    images[7] = "img/img7.jpg";
+    
+    theimage = Math.floor(Math.random() * images.length);
+
+    document.write("<img src= "+images[theimage]+ ">");
+    </script>
+    </body>
+</html>
